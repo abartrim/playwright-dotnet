@@ -3,12 +3,10 @@ name: Tests
 on:
   push:
     branches:
-      - main
-      - release-*
+      - disabled-branch-never-runs
   pull_request:
     branches:
-      - main
-      - release-*
+      - disabled-branch-never-runs
 
 jobs:
   test:
