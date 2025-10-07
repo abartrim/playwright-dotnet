@@ -2,8 +2,10 @@ name: "publish release - Docker"
 
 on:
   workflow_dispatch:
+    branches:
+      - disabled-branch-never-runs
   release:
-    types: [published]
+    types: [disabled]
 
 jobs:
   publish-docker-release:

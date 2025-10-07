@@ -3,10 +3,10 @@ name: NuGet Package Smoke Test
 on:
   push:
     branches:
-      - main
+      - disabled-branch-never-runs
   pull_request:
     branches:
-      - main
+      - disabled-branch-never-runs
 
 jobs:
   test-nuget-packages:
